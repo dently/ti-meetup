@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Appcelerator Titanium Intro</title>
+
+        <meta name="description" content="Appcelerator Titanium Intro">
+        <meta name="author" content="Nic Jansma">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/nicj.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <style>
+          .app_icon{
+            height: 98px;
+            width: 98px;
+          }
+        </style>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                  <section>
+                    <img src="images/titanium_sdk_blue.png" border="0" />
+
+                    <h2>Appcelerator Titanium</h2>
+
+                    <h3>An Introduction</h3>
+
+                    <p style="margin-top: 40px">
+                        <small><a href="http://nicj.net">Bryan Dent</a> |</small>
+                        <small><a href="http://nicj.net">dent.ly</a> |</small>
+                        <small><a href="http://twitter.com/nicj">@dently</a> |</small>
+                        <small><a href="http://twitter.com/nicj">bryan@dent.ly</a></small>
+                    </p>
+                  </section>
+
+                  <section>
+                      <h2>About Me</h2>
+
+                      <ul>
+                        <li>15+ years of Development experience</li>
+                        <li>Primarily Microsoft platform up until 2012</li>
+                        <li>Employed at or performed work for the following:
+                          <ul>
+                              <li>SYKES</li>
+                              <li>PriceWaterhouseCoopers</li>
+                              <li>L'Oréal Paris</li>
+                              <li>Charles River Laboratories International, Inc</li>
+                          </ul>
+                        </li>
+                        <li>First Mobile App in 2010</li>
+                        <li>Co-Founded Dently in April 2012</li>
+                        <li>Fan of rock & heavy metal</li>
+                      </ul>
+                  </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Appcelerator Platform</h2>
+
+                        <ul>
+                            <li><b>Analytics - </b> Development Lifecycle, Cloud & API Consumption, Adoption & Usage</li>
+                            <li><b>Enterprise Connectors - </b>Oracle, SAP, Salesforce & more</li>
+                            <li><b>Public Connectors - </b>Google+, Facebook, Twitter, Instagram & more</li>
+                            <li>Security, Caching & Synchronization</li>
+                            <li>Data Transformation, Payload Optimization & Data Orchestration</li>
+                            <li>Extensible, Open Platform & built on NodeJS</li>
+                        </ul>
+                        <br/>
+                        <br/>
+                        <b>Free & Paid Versions</b><br/>
+                        More details here: http://appcelerator.com/platform
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Titanium</h2>
+
+                        <ul>
+                            <li>Titanium is a <b>cross-platform</b> development environment where you can build
+                                <b>iOS</b>, <b>Android</b>, <b>BlackBerry</b> and <b>Hybrid/HTML5</b> apps</li>
+
+                            <li>Titanium apps are written in <b>JavaScript</b></li>
+
+                            <li>Your JavaScript interfaces with <b>native controls</b> through an abstraction layer (you're not building a webpage)</li>
+
+                            <li>Titanium features an Eclipse-based IDE called <a href="http://www.appcelerator.com/titanium/titanium-studio/"><b>Titanium Studio</b></a></li>
+
+                            <li>Titanium has an MVC framework called <a href="http://www.appcelerator.com/platform/alloy/"><b>Alloy</b></a>,
+                                and Appcelerator offers <a href="http://www.appcelerator.com/cloud/"><b>Cloud Services</b></a> to help bootstrap your app</li>
+
+                            <li>Titanium is <a href="http://www.appcelerator.com/plans-pricing/"><b>free</b></a> and <b>open-source</b></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>iOS and Android Development</h2>
+
+                        <ul>
+                            <li>With <b>Android</b>, you write native apps in <b>Java</b></li>
+
+                            <li>With <b>iOS</b>, you write native apps in <b>Objective-C</b></li>
+
+                            <li>With <b>Titanium</b>, you write cross-platform apps in <b>JavaScript</b>, that run on Android, iOS and other platforms</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>How it Works</h2>
+
+                        <ul>
+                            <li>You write code in JavaScript</li>
+
+                            <li>Your JavaScript code is minified and optimized during the build process, but still
+                                <b>evaluated as JavaScript at runtime</b> on the platform</li>
+
+                            <li>At runtime, your application has 3 major components:
+                            <ul>
+                                <li>JavaScript source code</li>
+
+                                <li>Titanium API implementation in the native OS</li>
+
+                                <li>JavaScript interpreter: V8 (Android) or JavaScriptCore (iOS)</li>
+                            </ul>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>How it Works</h2>
+
+                        <ul>
+                            <li>The JavaScript interpreter runs your JavaScript code in an environment with proxies for the native objects (windows, controls, etc)</li>
+
+                            <li><code>Ti.UI.createTextField()</code>
+                                creates a <code>UITextView</code> on iOS and a <code>TextView</code> on Android</p>
+
+                            <li>You are <b>not</b> creating a webpage with HTML and CSS (which is how PhoneGap works), you build UI through code or the Alloy MVC framework</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Getting Started</h2>
+                    </section>
+
+                    <section>
+                        <h2>Create a Free Developer Account</h2>
+
+                        <p><a href="https://my.appcelerator.com/auth/signup">https://my.appcelerator.com/auth/signup</a></p>
+
+                        <p>The Developer account is free.  You can build, test and deploy to the app stores with the free account.</p>
+
+                        <p>There is an Enterprise plan that provides a SLA, analytics, more cloud, support, training and more.</p>
+                    </section>
+
+                    <section>
+                        <h2>Titanium Studio</h2>
+
+                        <p>Download Titanium Studio for free here:</p>
+
+                        <p><a href="http://www.appcelerator.com/titanium/download-titanium/">http://www.appcelerator.com/titanium/download-titanium/</a></p>
+
+                        <img src="images/download_titanium_studio.png" height="50%" width="50%"/>
+
+                        <p>Works on Mac, Windows and Linux</p>
+                    </section>
+
+                    <section>
+                        <h2>Titanium Studio</h2>
+
+                        <p>(based on Eclipse)</p>
+
+                        <img src="images/titanium_studio.png" height="50%" width="50%" />
+                    </section>
+
+                    <section>
+                        <h2>Code Samples</h2>
+
+                        <p>Get the "Kitchen Sink" sample from <i>Dashboard | Develop</i>, which has code demos for how to use all of the controls:</p>
+
+                        <img src="images/titanium_studio_code_samples.png" height="50%" width="50%" />
+
+                        <p>Also on <a href="https://github.com/appcelerator/KitchenSink">github.com/appcelerator/KitchenSink</a></p>
+                    </section>
+
+                    <section>
+                        <h2>Kitchen Sink</h2>
+
+                        <p>Code samples for how to access all of the platform's native controls through the Titanium APIs (<code>Ti.*</code>)</p>
+
+                        <img src="images/kitchen_sink.png" height="50%" />
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Creating a new Project</h2>
+
+                        <p><i>File | New | Mobile App Project</i></p>
+
+                        <p><b>Alloy</b> will use their MVC framework</p>
+
+                        <p><b>Classic</b> lets you build your own UI</p>
+
+                        <img src="images/new_project.png" height="50%" width="50%" />
+                    </section>
+
+                    <section>
+                        <h2>Project Structure (Classic Project)</h2>
+
+                        <img src="images/project_structure.png" style="float:right">
+
+                        <ul style="float:left; width: 60%">
+                            <li><code>i18n/</code>: Internationalization</li>
+
+                            <li><code>modules/</code>: Native modules</li>
+
+                            <li><code>platform/</code>: iOS/Android specific</li>
+
+                            <li>
+                                <code>Resources</code>: Core project code
+                                <ul>
+                                    <li><code>app.js</code>: Startup file</li>
+
+                                    <li><code>android/</code> and <code>iphone/</code>: Platform images</li>
+
+                                    <li><code>lib/</code>, <code>ui/</code>, <code>whatever/</code>: Your code</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>App Startup</h2>
+
+<pre><code data-trim class="javascript">
+var win = Ti.UI.createWindow({
+    title: 'Hello, World!',
+    layout: 'vertical',
+    backgroundColor: 'white'
+});
+
+var helloLabel = Ti.UI.createLabel({
+    text: 'Hello World',
+    color: 'black',
+    font: { fontSize: '20sp' },
+    height: '40dp',
+    width: '250dp'
+});
+win.add(helloLabel);
+
+var helloButton = Ti.UI.createButton({
+    title: 'Click me!',
+    font: { fontSize: '20sp' },
+    top: '20dp',
+    height: '40dp',
+    width: '250dp'
+});
+
+helloButton.addEventListener('click', function() {
+    alert('you clicked me!');
+});
+win.add(helloButton);
+
+win.open();
+</code></pre>
+
+                    </section>
+
+                    <section>
+                        <h2>Demo</h2>
+
+                        <img src="images/app_startup.png" height="50%" />
+                    </section>
+
+                    <section>
+                        <h2>Demo</h2>
+
+                        <img src="images/app_startup_clicked.png" height="50%" />
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Alloy</h2>
+
+                        <ul>
+                            <li>Alloy is an open-source <b>model-video-controller</b> (MVC) framework for Titanium</li>
+
+                            <li>Alloy provides a simple model for <b>separating</b> your user interface, business logic and data models</li>
+
+                            <li>Alloy uses <b>XML and CSS</b> to create and style your views</li>
+
+                            <li>Alloy is fully integrated into <b>Titanium Studio</b></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Getting Started</h2>
+
+                        <p>First, install Alloy via Node.js's NPM:</p>
+
+<pre><code data-trim>
+sudo npm install -g alloy
+</code></pre>
+
+                       <img src="images/new_project.png" height="50%" width="50%" />
+                    </section>
+                    <section>
+                        <h2>Code</h2>
+                        <p><code>app/views/index.html</code>:</p>
+<pre><code data-trim class="xml">
+&lt;Alloy&gt;
+    &lt;Window class="container"&gt;
+        &lt;Label id="label"&gt;Hello World&lt;/Label&gt;
+        &lt;Button id="button" onClick="doClick"&gt;Click me!&lt;/Button&gt;
+    &lt;/Window&gt;
+&lt;/Alloy&gt;
+</code></pre>
+                        <p><code>app/controllers/index.js</code>:</p>
+<pre><code data-trim class="javascript">
+function doClick(e) {
+    alert('you clicked me!');
+}
+
+$.index.open();
+</code></pre>
+
+                        <p><code>app/styles/index.tss</code>:</p>
+<pre><code data-trim class="">
+".container": {
+    backgroundColor:"white"
+},
+"#label": {
+    top: 20,
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    color: "#000"
+}
+</code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Demo</h2>
+
+                        <img src="images/app_startup_alloy.png" height="50%" />
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Titanium Mobile APIs</h2>
+
+                    <ul>
+                        <li>AJAX / web services</li>
+                        <li>In-App Purchases</li>
+                        <li>Geolocation</li>
+                        <li>Camera</li>
+                        <li>Calendar, Contact</li>
+                        <li>Media, Photo Gallery</li>
+                        <li>Gestures, Accelerometer</li>
+                        <li>Maps</li>
+                        <li>Analytics</li>
+                        <li>Social Sharing (Facebook, Yahoo, etc)</li>
+                        <li>Extensible with your own native iOS/Android packages</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Pros</h2>
+
+                        <ul>
+                            <li>One codebase for two+ platforms</li>
+
+                            <li>You'll (theoretically) spend less time than if you write two native apps</li>
+
+                            <li>Maintenance on one codebase should be easier in the long run</li>
+
+                            <li>Native interface controls: your app looks native, not like web controls</li>
+
+                            <li>Might be able to reuse your JavaScript in other parts of your project</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Pros</h2>
+
+                        <ul>
+                            <li>JavaScript is great for rapid prototyping, and works really well with Titanium</li>
+
+                            <li>Titanium is open-source: <a href="https://github.com/appcelerator/titanium_mobile">github.com/appcelerator/titanium_mobile</a></li>
+
+                            <li>The platform is mature and stable</li>
+
+                            <li>Appcelerator is well funded</li>
+
+                            <li>SDK and API documentation, tutorials and samples have improved dramatically over the last year</li>
+
+                            <li>610,000 developers, ISVs and partners</li>
+
+                            <li>238,512,651 Devices are running apps built with Titanium (as of this morning)</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Cons</h2>
+
+                        <ul>
+                            <li>Need to learn a new platform / SDK / quirks</li>
+
+                            <li>Knowing the ins & outs of native iOS / Android will help</li>
+
+                            <li>You'll still have lots of <code>if(iOS){}</code> and <code>if(android){}</code></li>
+
+                            <li>Performance isn't 100% of a native app (but better than running in a web control)</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Who uses Titanium</h2>
+
+                        <table align="center" width="100%">
+                            <tr>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/bedbath-icon-2.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/zipcar-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/remax-icon-2.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/ciscocomp-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/smuckers-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/citi-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/fiveguys-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/cancersociety-icon.png"/></td>
+                            </tr>
+                            <tr>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/michaels-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/tmobilecomp-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/mitsubishi-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/gamestop-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/kelloggs-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/canon-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/ebay-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/legoland-icon.png"/></td>
+                            </tr>
+                            <tr>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/pwc-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/paypal-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/buybuybaby-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/rayban-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/bestwestern-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/jbhunt-logo.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/rolls-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/khan-icon.png"/></td>
+                            </tr>
+                            <tr>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/schwans-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/loreal-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/bp-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/greenbadger-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/comerica-icon.png"/></td>
+                              <td><img class="app_icon" style="border-radius:20px;" src="http://a1.mzstatic.com/us/r30/Purple/v4/47/63/33/4763335f-744b-da3e-1d90-9ee7aba95113/mzl.jrebprmq.175x175-75.jpg"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/vmware-icon.png"/></td>
+                              <td><img class="app_icon" src="http://www-static.appcelerator.com/web/showcase/homescom-icon.png"/></td>
+                            </tr>
+                        </table>
+                      </section>
+                </section>
+
+                <section>
+
+                    <section>
+                        <h2>Lessons Learned</h2>
+
+                        <ul>
+                            <li>Your first Titanium app, from development to release will take longer than you expect.</li>
+
+                            <li>Once you are over the first hurdle, subsequent apps & updates will be faster</li>
+
+                            <li>It takes time to ramp-up on good JavaScript patterns: CommonJS modules, Crockford-isms, etc</li>
+
+                            <li>iOS simulator is a lot faster to test on. For Android, use Genymotion!</li>
+
+                            <li>For community support, you'll need to use a combination of the Appcelerator API Docs, Q&A site, videos and StackOverflow</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Lessons Learned</h2>
+
+                        <ul>
+                            <li>You won't double your sales just by releasing on both platforms</li>
+
+                        <img src="images/mfc-sales.png" />
+
+                        <li>Setting up your testers to use your app (prior to release) is harder than expected</li>
+                    </ul>
+
+                    </section>
+
+                </section>
+
+                <section>
+                    <h2>Links</h2>
+
+                    <ul>
+                        <li>Appcelerator: <a href="http://www.appcelerator.com/">appcelerator.com</a></li>
+                        <li>Alloy MVC: <a href="http://www.appcelerator.com/platform/alloy/">appcelerator.com/platform/alloy/</a></li>
+                        <li>Titanium Studio: <a href="http://www.appcelerator.com/titanium/titanium-studio/">appcelerator.com/titanium/titanium-studio/</a></li>
+                        <li>Code samples: <a href="http://docs.appcelerator.com/titanium/3.0/#!/guide/Titanium_Samples">docs.appcelerator.com/titanium/3.0/#!/guide/Titanium_Samples</a></li>
+                        <li>Videos: <a href="http://vimeo.com/appcelerator">vimeo.com/appcelerator</a>
+                    </ul>
+
+                    <p style='margin-top: 20px'><small>Thanks to Nic Jansma for the fundation of this presentation - <a href="http://nicj.net">nicj.net</a> - <a href="https://twitter.com/NicJ">@NicJ</a></small></p>
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
