@@ -1,4 +1,4 @@
 ti-meetup
 =========
 
-Appcelerator Titanium Meetup Content
+Tampa Appcelerator Titanium Meetup Content
