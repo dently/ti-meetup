@@ -1,0 +1,7 @@
+/**
+ * Pre-compile will grab the selected example code specified in the config.json
+ * and copy it to the app directory so you don't have to do this manually.
+ */
+task("pre:load", function(event, logger) {
+	
+});
