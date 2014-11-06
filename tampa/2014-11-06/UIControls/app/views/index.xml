@@ -13,6 +13,7 @@
             <ListItem title="Options Dialog" itemId="OptionsDialog" class="listItem"></ListItem>
             <ListItem title="Switch" itemId="Switch" class="listItem"></ListItem>
             <ListItem title="Tab" itemId="Tab" class="listItem"></ListItem>
+						<ListItem title="Slider" itemId="Slider" class="listItem"></ListItem>
             <ListItem title="Activity Indicator" itemId="ActIndicator" class="listItem"></ListItem>
 	        </ListSection>
 		    </ListView>
@@ -31,6 +32,7 @@
 					<ListItem title="Options Dialog" itemId="OptionsDialog" class="listItem"></ListItem>
 					<ListItem title="Switch" itemId="Switch" class="listItem"></ListItem>
 					<ListItem title="Tab" itemId="Tab" class="listItem"></ListItem>
+					<ListItem title="Slider" itemId="Slider" class="listItem"></ListItem>
 					<ListItem title="Activity Indicator" itemId="ActIndicator" class="listItem"></ListItem>
 				</ListSection>
 	    </ListView>

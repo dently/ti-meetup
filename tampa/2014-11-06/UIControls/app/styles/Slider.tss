@@ -1,0 +1,14 @@
+"#slider":{
+  top: '100dp'
+},
+
+"#label":{
+  color: 'black',
+  top: '50dp'
+},
+
+"#label[platform=android]":{
+  font:{
+    fontSize: '20dp'
+  }
+}
