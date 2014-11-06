@@ -1,0 +1,8 @@
+"Window": {
+	backgroundColor: "#eee",
+	height: Ti.UI.FILL
+},
+"Label": {
+	color: "#222",
+	font: { fontSize: 24 }
+}
