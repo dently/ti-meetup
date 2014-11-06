@@ -19,3 +19,14 @@ App.init();
 //$.label.addEventListener("click", function() {
 //	App.Navigator.open("screen");
 //});
+
+$.list.addEventListener("itemclick", function(e){
+
+	switch(e.itemId){
+		case "listView":
+
+			App.Navigator.open('ListView');
+
+			break;
+	}
+});

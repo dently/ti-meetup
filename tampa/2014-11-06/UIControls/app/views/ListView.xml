@@ -1,0 +1,29 @@
+<Alloy>
+	<Window>
+		<RightNavButton>
+				<Button id="editList" title="Edit"></Button>
+		</RightNavButton>
+		<ListView id="list" class="container" platform="ios">
+			<ListSection>
+				<ListItem title="Apples" itemId="apples" canMove="true"></ListItem>
+				<ListItem title="Bananas" itemId="bananas" canMove="true"></ListItem>
+				<ListItem title="Oranges" itemId="oranges" canMove="true"></ListItem>
+				<ListItem title="Pears" itemId="pears" canMove="true"></ListItem>
+				<ListItem title="Peaches" itemId="peaches" canMove="true"></ListItem>
+				<ListItem title="Blueberries" itemId="blueberries" canMove="true"></ListItem>
+				<ListItem title="Strawberries" itemId="strawberries" canMove="true"></ListItem>
+			</ListSection>
+		</ListView>
+		<ListView id="list" class="container" platform="android">
+			<ListSection>
+				<ListItem title="Apples" itemId="apples"></ListItem>
+				<ListItem title="Bananas" itemId="bananas"></ListItem>
+				<ListItem title="Oranges" itemId="oranges"></ListItem>
+				<ListItem title="Pears" itemId="pears"></ListItem>
+				<ListItem title="Peaches" itemId="peaches"></ListItem>
+				<ListItem title="Blueberries" itemId="blueberries"></ListItem>
+				<ListItem title="Strawberries" itemId="strawberries"></ListItem>
+			</ListSection>
+		</ListView>
+	</Window>
+</Alloy>

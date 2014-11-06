@@ -1,8 +1,15 @@
-Example Project
+Standard, Native Navigation Example
 ===============
-Import this example project in to Studio to run through the various examples of Core.
+This example uses the standard navigation architectures for Android and iOS.
+e.g. NavigationWindow for iOS and the ActionBar for Android.
 
-We made it easy to run these all in one Ti project.  Open `/app/config.json`
-and change the name of the `"examples"` property to the example you want to run.
+This is a simple example of handling opening new windows in a cross platform
+fashion.  If you want to manage the stack yourself, do things like close all
+windows, etc. Reference some of the other examples on managing your own
+stack of views or windows.  Those examples can be mixed here with the concept below.
 
-e.g. Change the name to "simple" to run the simple sample app.
+Example Videos:
+
+[Android](http://www.screencast.com/t/u8zKOZFQ8c)
+
+[iOS](http://www.screencast.com/t/LgcM7IH0Du6P)

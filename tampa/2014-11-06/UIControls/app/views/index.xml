@@ -1,40 +1,38 @@
 <Alloy>
 	<!-- iOS Structure -->
 	<NavigationWindow id="navWindow" platform="ios">
-		<Window id="indexWindow" title="Home">
-			<!--<Label id="label">Home Window</Label>-->
+		<Window id="indexWindow" title="Choose a Control">
+
 			<ListView id="list">
-		        <ListSection>
-		            <ListItem title="List View"></ListItem>
-		            <ListItem title="Label"></ListItem>
-		            <ListItem title="Button"></ListItem>
-		            <ListItem title="E-mail Dialog"></ListItem>
-		            <ListItem title="Picker"></ListItem>
-		            <ListItem title="Options Dialog"></ListItem>
-		            <ListItem title="Switch"></ListItem>
-		            <ListItem title="Tab"></ListItem>
-		            <ListItem title="Activity Indicator"></ListItem>
-		            <ListItem title="Button"></ListItem>
-		        </ListSection>
+	        <ListSection>
+            <ListItem title="List View" itemId="listView"></ListItem>
+            <ListItem title="Label" itemId="label"></ListItem>
+            <ListItem title="Button" itemId="button"></ListItem>
+            <ListItem title="E-mail Dialog" itemId="emailDialog"></ListItem>
+            <ListItem title="Picker" itemId="picker"></ListItem>
+            <ListItem title="Options Dialog" itemId="optionsDialog"></ListItem>
+            <ListItem title="Switch" itemId="switch"></ListItem>
+            <ListItem title="Tab" itemId="tab"></ListItem>
+            <ListItem title="Activity Indicator" itemId="actIndicator"></ListItem>
+	        </ListSection>
 		    </ListView>
 		</Window>
 	</NavigationWindow>
 
 	<!-- Android Structure -->
-	<Window id="indexWindow" platform="android" title="Home">
+	<Window id="indexWindow" platform="android" title="Choose a Control">
 		<ListView id="list">
-	        <ListSection>
-	            <ListItem title="List View"></ListItem>
-	            <ListItem title="Label"></ListItem>
-	            <ListItem title="Button"></ListItem>
-	            <ListItem title="E-mail Dialog"></ListItem>
-	            <ListItem title="Picker"></ListItem>
-	            <ListItem title="Options Dialog"></ListItem>
-	            <ListItem title="Switch"></ListItem>
-	            <ListItem title="Tab"></ListItem>
-	            <ListItem title="Activity Indicator"></ListItem>
-	            <ListItem title="Button"></ListItem>
-	        </ListSection>
+        <ListSection>
+					<ListItem title="List View" itemId="listView"></ListItem>
+					<ListItem title="Label" itemId="label"></ListItem>
+					<ListItem title="Button" itemId="button"></ListItem>
+					<ListItem title="E-mail Dialog" itemId="emailDialog"></ListItem>
+					<ListItem title="Picker" itemId="picker"></ListItem>
+					<ListItem title="Options Dialog" itemId="optionsDialog"></ListItem>
+					<ListItem title="Switch" itemId="switch"></ListItem>
+					<ListItem title="Tab" itemId="tab"></ListItem>
+					<ListItem title="Activity Indicator" itemId="actIndicator"></ListItem>
+				</ListSection>
 	    </ListView>
 	</Window>
 </Alloy>
