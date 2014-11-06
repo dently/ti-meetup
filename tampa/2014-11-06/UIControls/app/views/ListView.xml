@@ -1,8 +1,15 @@
 <Alloy>
 	<Window>
-		<RightNavButton>
+		<RightNavButton platform="ios">
 				<Button id="editList" title="Edit"></Button>
 		</RightNavButton>
+		<Menu id="menu" platform="android">
+			<MenuItem
+				id="menuItem"
+				title="New Screen"
+				showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS"
+				onClick="handleMenuItem" />
+		</Menu>
 		<ListView id="list" class="container" platform="ios">
 			<ListSection>
 				<ListItem title="Apples" itemId="apples" canMove="true"></ListItem>

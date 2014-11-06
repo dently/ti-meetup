@@ -1,0 +1,15 @@
+
+"#standard":{
+  top: '50dp',
+  text: 'Standard'
+},
+
+"#custom":{
+  backgroundColor: 'black',
+  color:'white',
+  font: {
+    fontSize: '14dp'
+  },
+  text: 'Custom',
+  top: '100dp'
+}

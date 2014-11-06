@@ -1,0 +1,10 @@
+
+".listItem":{
+  color:'black'
+},
+
+".listItem[platform=android]":{
+  font: {
+    fontSize: '20dp'
+  }
+}

@@ -16,17 +16,6 @@ if(OS_IOS) {
 // Init our app singleton
 App.init();
 
-//$.label.addEventListener("click", function() {
-//	App.Navigator.open("screen");
-//});
-
 $.list.addEventListener("itemclick", function(e){
-
-	switch(e.itemId){
-		case "listView":
-
-			App.Navigator.open('ListView');
-
-			break;
-	}
+	App.Navigator.open(e.itemId);
 });

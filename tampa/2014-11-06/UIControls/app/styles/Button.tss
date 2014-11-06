@@ -1,0 +1,22 @@
+
+"#btnCustom":{
+  borderRadius: 5,
+  backgroundColor: 'blue',
+  title: 'Custom',
+  color: 'white',
+  top: '75dp',
+  width: '95dp'
+},
+
+"#btnCustom2":{
+  backgroundColor: 'orange',
+  title: 'Custom',
+  color: 'white',
+  top: '130dp',
+  width: '95dp'
+},
+
+"#btnStandard":{
+  title: 'Standard',
+  top: '175dp'
+}

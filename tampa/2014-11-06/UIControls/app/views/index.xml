@@ -5,15 +5,15 @@
 
 			<ListView id="list">
 	        <ListSection>
-            <ListItem title="List View" itemId="listView"></ListItem>
-            <ListItem title="Label" itemId="label"></ListItem>
-            <ListItem title="Button" itemId="button"></ListItem>
-            <ListItem title="E-mail Dialog" itemId="emailDialog"></ListItem>
-            <ListItem title="Picker" itemId="picker"></ListItem>
-            <ListItem title="Options Dialog" itemId="optionsDialog"></ListItem>
-            <ListItem title="Switch" itemId="switch"></ListItem>
-            <ListItem title="Tab" itemId="tab"></ListItem>
-            <ListItem title="Activity Indicator" itemId="actIndicator"></ListItem>
+            <ListItem title="List View" itemId="ListView" class="listItem"></ListItem>
+            <ListItem title="Label" itemId="Label" class="listItem"></ListItem>
+            <ListItem title="Button" itemId="Button" class="listItem"></ListItem>
+            <ListItem title="E-mail Dialog" itemId="EmailDialog" class="listItem"></ListItem>
+            <ListItem title="Picker" itemId="Picker" class="listItem"></ListItem>
+            <ListItem title="Options Dialog" itemId="OptionsDialog" class="listItem"></ListItem>
+            <ListItem title="Switch" itemId="Switch" class="listItem"></ListItem>
+            <ListItem title="Tab" itemId="Tab" class="listItem"></ListItem>
+            <ListItem title="Activity Indicator" itemId="ActIndicator" class="listItem"></ListItem>
 	        </ListSection>
 		    </ListView>
 		</Window>
@@ -23,15 +23,15 @@
 	<Window id="indexWindow" platform="android" title="Choose a Control">
 		<ListView id="list">
         <ListSection>
-					<ListItem title="List View" itemId="listView"></ListItem>
-					<ListItem title="Label" itemId="label"></ListItem>
-					<ListItem title="Button" itemId="button"></ListItem>
-					<ListItem title="E-mail Dialog" itemId="emailDialog"></ListItem>
-					<ListItem title="Picker" itemId="picker"></ListItem>
-					<ListItem title="Options Dialog" itemId="optionsDialog"></ListItem>
-					<ListItem title="Switch" itemId="switch"></ListItem>
-					<ListItem title="Tab" itemId="tab"></ListItem>
-					<ListItem title="Activity Indicator" itemId="actIndicator"></ListItem>
+					<ListItem title="List View" itemId="ListView" class="listItem"></ListItem>
+					<ListItem title="Label" itemId="Label" class="listItem"></ListItem>
+					<ListItem title="Button" itemId="Button" class="listItem"></ListItem>
+					<ListItem title="E-mail Dialog" itemId="EmailDialog" class="listItem"></ListItem>
+					<ListItem title="Picker" itemId="Picker" class="listItem"></ListItem>
+					<ListItem title="Options Dialog" itemId="OptionsDialog" class="listItem"></ListItem>
+					<ListItem title="Switch" itemId="Switch" class="listItem"></ListItem>
+					<ListItem title="Tab" itemId="Tab" class="listItem"></ListItem>
+					<ListItem title="Activity Indicator" itemId="ActIndicator" class="listItem"></ListItem>
 				</ListSection>
 	    </ListView>
 	</Window>

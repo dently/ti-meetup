@@ -1,0 +1,6 @@
+<Alloy>
+	<Window id="window" title="Labels">
+		<Label id="standard"></Label>
+		<Label id="custom"></Label>
+	</Window>
+</Alloy>

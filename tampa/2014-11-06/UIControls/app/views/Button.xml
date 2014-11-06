@@ -1,0 +1,9 @@
+<Alloy>
+	<Window id="window" title="Buttons">
+		<Button id="btnCustom"></Button>
+
+		<Button id="btnCustom2"></Button>
+
+		<Button id="btnStandard"></Button>
+	</Window>
+</Alloy>
