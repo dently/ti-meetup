@@ -2,7 +2,7 @@
 	<!-- iOS Structure -->
 	<NavigationWindow id="navWindow" platform="ios">
 		<Window id="indexWindow" title="Choose a Control">
-
+			<ActivityIndicator visible="false" id="activityIndicator" message="Loading..."/>
 			<ListView id="list">
 	        <ListSection>
             <ListItem title="List View" itemId="ListView" class="listItem"></ListItem>
@@ -22,6 +22,7 @@
 
 	<!-- Android Structure -->
 	<Window id="indexWindow" platform="android" title="Choose a Control">
+		<ActivityIndicator visible="false" id="activityIndicator" message="Loading..."/>
 		<ListView id="list">
         <ListSection>
 					<ListItem title="List View" itemId="ListView" class="listItem"></ListItem>

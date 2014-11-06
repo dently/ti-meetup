@@ -1,35 +1,36 @@
 <Alloy>
-	<Window>
+	<Window id="listViewWindow">
 		<RightNavButton platform="ios">
 				<Button id="editList" title="Edit"></Button>
 		</RightNavButton>
 		<Menu id="menu" platform="android">
 			<MenuItem
 				id="menuItem"
-				title="New Screen"
+				title="Back"
 				showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS"
-				onClick="handleMenuItem" />
+				onClick="back"
+				/>
 		</Menu>
 		<ListView id="list" class="container" platform="ios">
 			<ListSection>
-				<ListItem title="Apples" itemId="apples" canMove="true"></ListItem>
-				<ListItem title="Bananas" itemId="bananas" canMove="true"></ListItem>
-				<ListItem title="Oranges" itemId="oranges" canMove="true"></ListItem>
-				<ListItem title="Pears" itemId="pears" canMove="true"></ListItem>
-				<ListItem title="Peaches" itemId="peaches" canMove="true"></ListItem>
-				<ListItem title="Blueberries" itemId="blueberries" canMove="true"></ListItem>
-				<ListItem title="Strawberries" itemId="strawberries" canMove="true"></ListItem>
+				<ListItem class="listItem" title="Apples" itemId="apples" canMove="true" accessoryType="Titanium.UI.LIST_ACCESSORY_TYPE_CHECKMARK"></ListItem>
+				<ListItem class="listItem" title="Bananas" itemId="bananas" canMove="true" accessoryType="Titanium.UI.LIST_ACCESSORY_TYPE_DETAIL"></ListItem>
+				<ListItem class="listItem" title="Oranges" itemId="oranges" canMove="true" accessoryType="Titanium.UI.LIST_ACCESSORY_TYPE_DISCLOSURE"></ListItem>
+				<ListItem class="listItem" title="Pears" itemId="pears" canMove="true" canEdit="true"></ListItem>
+				<ListItem class="listItem" title="Peaches" itemId="peaches" canMove="true" canEdit="true"></ListItem>
+				<ListItem class="listItem" title="Blueberries" itemId="blueberries" canMove="true" canEdit="true"></ListItem>
+				<ListItem class="listItem" title="Strawberries" itemId="strawberries" canMove="true" canEdit="true"></ListItem>
 			</ListSection>
 		</ListView>
 		<ListView id="list" class="container" platform="android">
 			<ListSection>
-				<ListItem title="Apples" itemId="apples"></ListItem>
-				<ListItem title="Bananas" itemId="bananas"></ListItem>
-				<ListItem title="Oranges" itemId="oranges"></ListItem>
-				<ListItem title="Pears" itemId="pears"></ListItem>
-				<ListItem title="Peaches" itemId="peaches"></ListItem>
-				<ListItem title="Blueberries" itemId="blueberries"></ListItem>
-				<ListItem title="Strawberries" itemId="strawberries"></ListItem>
+				<ListItem class="listItem" title="Apples" itemId="apples" accessoryType="Titanium.UI.LIST_ACCESSORY_TYPE_CHECKMARK"></ListItem>
+				<ListItem class="listItem" title="Bananas" itemId="bananas" accessoryType="Titanium.UI.LIST_ACCESSORY_TYPE_DETAIL"></ListItem>
+				<ListItem class="listItem" title="Oranges" itemId="oranges" accessoryType="Titanium.UI.LIST_ACCESSORY_TYPE_DISCLOSURE"></ListItem>
+				<ListItem class="listItem" title="Pears" itemId="pears"></ListItem>
+				<ListItem class="listItem" title="Peaches" itemId="peaches"></ListItem>
+				<ListItem class="listItem" title="Blueberries" itemId="blueberries"></ListItem>
+				<ListItem class="listItem" title="Strawberries" itemId="strawberries"></ListItem>
 			</ListSection>
 		</ListView>
 	</Window>

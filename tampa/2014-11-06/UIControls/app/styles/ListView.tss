@@ -1,4 +1,9 @@
+".listItem":{
+  color:'black'
+},
 
-".container" : {
-  
-}
+".listItem[platform=android]":{
+  font: {
+    fontSize: '20dp'
+  }
+},

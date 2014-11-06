@@ -19,7 +19,15 @@ App.init();
 $.list.addEventListener("itemclick", function(e) {
   if (e.itemId === 'OptionsDialog') {
     showOptions();
-  } else {
+  }
+  else if(e.itemId === 'ActIndicator'){
+    $.activityIndicator.show();
+
+    setTimeout(function(){
+      $.activityIndicator.hide();
+    }, 6000);
+  }
+  else {
     App.Navigator.open(e.itemId);
   }
 });

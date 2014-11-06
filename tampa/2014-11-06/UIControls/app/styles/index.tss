@@ -7,4 +7,22 @@
   font: {
     fontSize: '20dp'
   }
+},
+
+"#activityIndicator[platform=ios]":{
+  zIndex: 99,
+  style: Ti.UI.iPhone.ActivityIndicatorStyle.DARK,
+  color: 'green',
+  height: '65dp',
+  work: '100dp',
+  font: {fontFamily:'Helvetica Neue', fontSize:26, fontWeight:'bold'}
+},
+
+"#activityIndicator[platform=android]":{
+  zIndex: 99,
+  style: Ti.UI.ActivityIndicatorStyle.DARK,
+  color: 'green',
+  height: '65dp',
+  work: '100dp',
+  font: {fontFamily:'Helvetica Neue', fontSize:'32dp', fontWeight:'bold'}
 }
