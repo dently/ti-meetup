@@ -1,0 +1,8 @@
+<Alloy>
+  <Window id="pickerContainer" title="Pickers">
+    <Button id="btnPicker1"></Button>
+
+    <Button id="btnPicker2"></Button>
+
+  </Window>
+</Alloy>

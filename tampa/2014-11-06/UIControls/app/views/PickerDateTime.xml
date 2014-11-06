@@ -1,0 +1,27 @@
+<Alloy>
+  <Window id="pickerWindow">
+    <View id="pickerView">
+      <View id="header" platform="android">
+        <Label id="header_title">Pick a date</Label>
+        <View id="divider"></View>
+      </View>
+      <Toolbar id="toolbar" platform="ios">
+        <Items>
+          <Button id="buttonCancel" title="Cancel" style="Ti.UI.iPhone.SystemButtonStyle.BORDERED" onClick="onDone" />
+          <FlexSpace/>
+          <Button id="buttonDone" title="Done" style="Ti.UI.iPhone.SystemButtonStyle.DONE" onClick="onDone" />
+        </Items>
+      </Toolbar>
+      <View id="toolbar" platform="android">
+        <View id="vDivider"></View>
+        <View id="container">
+          <Button id="buttonCancel" onClick="onDone">Cancel</Button>
+          <View id="hDivider"></View>
+          <Button id="buttonDone" onClick="onDone">Set</Button>
+        </View>>
+      </View>
+      <Picker id="pickerDate" type="Ti.UI.PICKER_TYPE_DATE" bottom="0dp" height="200dp">
+      </Picker>
+    </View>
+  </Window>
+</Alloy>

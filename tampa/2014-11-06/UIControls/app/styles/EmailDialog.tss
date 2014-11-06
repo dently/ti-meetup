@@ -1,0 +1,5 @@
+
+"#btnShowDialog":{
+  title: 'Show E-mail Dialog',
+  top: '50dp'
+}

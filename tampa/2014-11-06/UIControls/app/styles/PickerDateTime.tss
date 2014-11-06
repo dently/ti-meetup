@@ -1,0 +1,22 @@
+"#pickerView": {
+  backgroundColor: 'white',
+  bottom: 0,
+  height: 260,
+  zIndex: 99
+},
+
+"#pickerWindow":{
+  height: 260,
+  bottom:0
+},
+
+"#toolbar": {
+  top: 0,
+  barColor: 'white'
+},
+
+"#picker": {
+  top: 44,
+  selectionIndicator: true,
+  useSpinner: true
+}

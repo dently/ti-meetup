@@ -1,0 +1,83 @@
+"#pickerView": {
+  top: '10%',
+  width: '85%',
+  height: '80%',
+  backgroundColor: '#EEE',
+  borderColor: '#636363',
+  borderWidth: 1,
+  borderRadius: 1,
+  zIndex: 99,
+  layout: 'composite'
+}
+"#header":{
+	height:"70dp",
+	top:0,
+	width:Ti.UI.FILL,
+	layout:"vertical"
+}
+"#header_title":{
+	height:"60dp",
+	left:"8dp",
+	textAlign:Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	color:"#0061c0",
+	font: {
+ 		fontSize: "24dp",
+ 		fontFamily: "Roboto-Regular"
+ 	},
+
+}
+"#divider":{
+	height:"1dp",
+	top:"5dp",
+	width:Ti.UI.FILL,
+	backgroundColor:"#0061c0",
+}
+
+"#picker": {
+  top: "70dp",
+  selectionIndicator: true,
+  useSpinner: true,
+  visibleItems: 10,
+  type: Ti.UI.PICKER_TYPE_PLAIN
+}
+
+"#toolbar": {
+  bottom: 0,
+  height: "61dp",
+  backgroundColor: 'transparent',
+  width: Ti.UI.FILL,
+  layout:"vertical"
+}
+"#vDivider":{
+	 width: Ti.UI.FILL,
+	 height:"1dp",
+	 backgroundColor:"#636363"
+}
+"#hDivider":{
+	 height: Ti.UI.FILL,
+	 top:0,
+	 width:"1dp",
+	 backgroundColor:"#636363"
+}
+"Button": {
+  width: '49%',
+  // borderColor:"#636363",
+  // borderWidth:".5dp",
+  backgroundColor: '#EEE',
+  height:"60dp"
+}
+
+"#container":{
+	width:Ti.UI.FILL,
+	layout:"horizontal"
+}
+
+"#buttonCancel": {
+  left: 0,
+  bottom:0
+}
+
+"#buttonDone": {
+  right: 0,
+  bottom:0
+}

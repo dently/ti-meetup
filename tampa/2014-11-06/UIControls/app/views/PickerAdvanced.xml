@@ -1,0 +1,19 @@
+<Alloy>
+  <Window id="pickerWindow">
+    <Picker top="50" id="pickerAdvanced" selectionIndicator="true" useSpinner="true" visible="false">
+      <PickerColumn id="column1">
+        <PickerRow title="Bananas" />
+        <PickerRow title="Strawberries" />
+        <PickerRow title="Mangos" />
+        <PickerRow title="Grapes" />
+      </PickerColumn>
+      <!-- Picker shorthand notation -->
+      <Column id="column2">
+        <Row title="red" />
+        <Row title="green" />
+        <Row title="blue" />
+        <Row title="orange" />
+      </Column>
+    </Picker>
+  </Window>
+</Alloy>
