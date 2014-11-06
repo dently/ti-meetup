@@ -1,0 +1,17 @@
+
+
+"#basicSwitch[platform=ios]":{
+  titleOn: 'Notifications On',
+  titleOff: 'Notifications Off',
+  top: '50dp',
+  color: 'black'
+},
+
+"#basicSwitch[platform=android]":{
+  title: 'Turn on notifications',
+  //textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  value: true,
+  width: '50dp',
+  top: '50dp',
+  color: 'black'
+}
