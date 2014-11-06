@@ -1,22 +1,17 @@
 
 
-$.init = function(){
+$.pb.show();
 
-  var total = 10;
+function increment(){
+  var newValue = $.pb.value + 1;
+  $.pb.value = newValue;
 
-  $.pb.show();
+  $.pb.message = 'Downloading ' + newValue.toString() + ' of ' + $.pb.max;
 
-  $.pb.max = total;
-
-  for(var i = 1; i <= total; i++){
-    $.pb.value = i;
-
-    $.pb.message = 'Downloading ' + i + ' of ' + total;
-    setTimeout(function(){
-    }, 2500);
+  if($.pb.value == $.pb.max){
+    $.btn.enabled = false;
   }
-
+  else{
+    $.btn.enabled = true;
+  }
 }
-
-
-$.init();

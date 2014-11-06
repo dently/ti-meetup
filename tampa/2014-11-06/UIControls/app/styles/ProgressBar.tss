@@ -1,4 +1,7 @@
 
-".container" : {
-  
+"#btn[platform=android]":{
+  color:'black',
+  font: {
+    fontSize: '24dp'
+  }
 }
