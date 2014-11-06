@@ -1,0 +1,22 @@
+
+"#txtField":{
+  color: 'black',
+  top: '50dp',
+  value: 'This is the value.',
+  width: '300dp',
+  top: '25dp'
+},
+
+"#txtArea":{
+  borderWidth: 2,
+  borderColor: '#bbb',
+  borderRadius: 5,
+  color: '#888',
+  font: {fontSize:20, fontWeight:'bold'},
+  keyboardType: Ti.UI.KEYBOARD_NUMBER_PAD,
+  returnKeyType: Ti.UI.RETURNKEY_GO,
+  textAlign: 'left',
+  value: 'This is the text area',
+  top: '100dp',
+  width: 300, height : 70
+}

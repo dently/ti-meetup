@@ -1,0 +1,13 @@
+<Alloy>
+	<Window>
+		<View id="topView">
+		</View>
+
+		<View id="middleView" onClick="middleViewClick">
+		</View>
+
+		<View id="bottomView">
+			<Label text="Label inside view" id="label" />
+		</View>
+	</Window>
+</Alloy>

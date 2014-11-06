@@ -1,0 +1,32 @@
+
+"#topView":{
+  backgroundColor: 'green',
+  borderRadius: '5',
+  height: '100dp',
+  width: '90%',
+  top: '10dp'
+},
+
+"#middleView":{
+  backgroundColor: 'red',
+  borderRadius: '5',
+  height: '100dp',
+  width: '90%',
+  top: '120dp'
+},
+
+"#bottomView":{
+  backgroundColor: 'blue',
+  borderRadius: '5',
+  height: '100dp',
+  width: '90%',
+  top: '230dp'
+},
+
+"#label[platform=android]":{
+  color: 'black',
+  font: {
+    fontSize: '24dp'
+  },
+  zIndex: 99
+}

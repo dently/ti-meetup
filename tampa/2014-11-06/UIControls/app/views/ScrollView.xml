@@ -1,0 +1,17 @@
+<Alloy>
+	<Window id="scrollViewWindow" title="ScrollView">
+		<ScrollView id="scrollView" layout="vertical">
+			<!-- Uncomment this if you don't want to use the widget
+			<View height="600dp" backgroundColor="green">
+					<Label text="First" color="black"/>
+			</View>
+			<View height="200dp" backgroundColor="yellow">
+					<Label text="Second" color="black"/>
+			</View>
+			<View height="200dp" backgroundColor="yellow">
+					<Label text="Second" color="black"/>
+			</View>
+			-->
+		</ScrollView>
+	</Window>
+</Alloy>

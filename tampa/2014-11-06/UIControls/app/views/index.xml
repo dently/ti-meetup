@@ -5,16 +5,21 @@
 			<ActivityIndicator visible="false" id="activityIndicator" message="Loading..."/>
 			<ListView id="list">
 	        <ListSection>
+						<ListItem title="View" itemId="View" class="listItem"></ListItem>
             <ListItem title="List View" itemId="ListView" class="listItem"></ListItem>
             <ListItem title="Label" itemId="Label" class="listItem"></ListItem>
             <ListItem title="Button" itemId="Button" class="listItem"></ListItem>
             <ListItem title="E-mail Dialog" itemId="EmailDialog" class="listItem"></ListItem>
-            <ListItem title="Picker" itemId="Picker" class="listItem"></ListItem>
+            <!--<ListItem title="Picker" itemId="Picker" class="listItem"></ListItem>-->
             <ListItem title="Options Dialog" itemId="OptionsDialog" class="listItem"></ListItem>
             <ListItem title="Switch" itemId="Switch" class="listItem"></ListItem>
             <ListItem title="Tab" itemId="Tab" class="listItem"></ListItem>
 						<ListItem title="Slider" itemId="Slider" class="listItem"></ListItem>
             <ListItem title="Activity Indicator" itemId="ActIndicator" class="listItem"></ListItem>
+						<ListItem title="Text Controls" itemId="TextControls" class="listItem"></ListItem>
+						<ListItem title="Web View" itemId="WebView" class="listItem"></ListItem>
+						<ListItem title="Scroll View" itemId="ScrollView" class="listItem"></ListItem>
+						<ListItem title="Progress Bar" itemId="ProgressBar" class="listItem"></ListItem>
 	        </ListSection>
 		    </ListView>
 		</Window>
@@ -25,16 +30,21 @@
 		<ActivityIndicator visible="false" id="activityIndicator" message="Loading..."/>
 		<ListView id="list">
         <ListSection>
+					<ListItem title="View" itemId="View" class="listItem"></ListItem>
 					<ListItem title="List View" itemId="ListView" class="listItem"></ListItem>
 					<ListItem title="Label" itemId="Label" class="listItem"></ListItem>
 					<ListItem title="Button" itemId="Button" class="listItem"></ListItem>
 					<ListItem title="E-mail Dialog" itemId="EmailDialog" class="listItem"></ListItem>
-					<ListItem title="Picker" itemId="Picker" class="listItem"></ListItem>
+					<!--<ListItem title="Picker" itemId="Picker" class="listItem"></ListItem>-->
 					<ListItem title="Options Dialog" itemId="OptionsDialog" class="listItem"></ListItem>
 					<ListItem title="Switch" itemId="Switch" class="listItem"></ListItem>
 					<ListItem title="Tab" itemId="Tab" class="listItem"></ListItem>
 					<ListItem title="Slider" itemId="Slider" class="listItem"></ListItem>
 					<ListItem title="Activity Indicator" itemId="ActIndicator" class="listItem"></ListItem>
+					<ListItem title="Text Controls" itemId="TextControls" class="listItem"></ListItem>
+					<ListItem title="Web View" itemId="WebView" class="listItem"></ListItem>
+					<ListItem title="Scroll View" itemId="ScrollView" class="listItem"></ListItem>
+					<ListItem title="Progress Bar" itemId="ProgressBar" class="listItem"></ListItem>
 				</ListSection>
 	    </ListView>
 	</Window>

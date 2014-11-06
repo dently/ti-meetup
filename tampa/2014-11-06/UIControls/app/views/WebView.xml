@@ -1,0 +1,5 @@
+<Alloy>
+	<Window id="webViewWindow" title="WebView">
+		<WebView url="http://www.google.com" height="Ti.UI.FILL" width="Ti.UI.FILL"></WebView>
+	</Window>
+</Alloy>

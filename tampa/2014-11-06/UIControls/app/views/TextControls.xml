@@ -1,0 +1,7 @@
+<Alloy>
+	<Window id="textControlsWindow" title="Text Controls">
+		<TextField id="txtField" />
+
+		<TextArea id="txtArea"/>
+	</Window>
+</Alloy>

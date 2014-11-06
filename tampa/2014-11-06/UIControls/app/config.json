@@ -1,15 +1,17 @@
 {
-	"global": {
-		"windowBackgroundColor": "#FFF",
-		"mochaTesting": false,
-		"example": "standardNavigation"
-	},
-	"env:development": {}, 
-	"env:test": {}, 
-	"env:production": {}, 
-	"os:android": {},
-	"os:blackberry": {},
-	"os:ios": {},
-	"os:mobileweb": {},
-	"dependencies": {}
+    "global": {
+        "windowBackgroundColor": "#FFF",
+        "mochaTesting": false,
+        "example": "standardNavigation"
+    },
+    "env:development": {},
+    "env:test": {},
+    "env:production": {},
+    "os:android": {},
+    "os:blackberry": {},
+    "os:ios": {},
+    "os:mobileweb": {},
+    "dependencies": {
+        "ly.dent.dummyWidget": "1.0"
+    }
 }

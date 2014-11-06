@@ -1,0 +1,5 @@
+<Alloy>
+	<View id="container">
+		<Label text="I am a label in a widget view" id="label"/>
+	</View>
+</Alloy>
